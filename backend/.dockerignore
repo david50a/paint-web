@@ -1,0 +1,45 @@
+# Ignore python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Ignore local virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Ignore IDE files and OS metadata
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore local environment config and secrets
+.env
+.env.*
+*.pem
+key.pem
+cert.pem
+
+# Ignore uploaded media/files (should be mounted/stored persistently)
+data/uploads/*
+app/uploads/*
+
+# Ignore local Git directories
+.git
+.github
+.gitignore
+
+# Stable Diffusion - Ignore the massive 4.2GB model checkpoint by default.
+# It is highly recommended to mount the stable_diffusion/data folder as a volume
+# in your container runtime rather than baking the 4.2GB file into the image.
+# If you explicitly want to package the model inside the Docker image,
+# comment out the line below.
+stable_diffusion/data/v1-5-pruned-emaonly.ckpt
