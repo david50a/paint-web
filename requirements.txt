@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-dotenv
+slowapi
+redis
+google-auth
+requests
+Pillow
+sentence-transformers
+bcrypt
+passlib
+python-jose[cryptography]
+werkzeug
+psycopg2-binary
+httpx
